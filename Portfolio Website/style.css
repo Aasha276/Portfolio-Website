@@ -1,0 +1,329 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+</style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    .poppins-semibold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+      }
+
+      
+}
+
+.PortFolio{
+   min-height: 100vh;
+    width: 100vw;
+background-color: rgb(0, 0, 0);
+display: flex;
+
+}
+
+nav{
+    display: flex;
+    align-items: centre;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding: 8%;
+    padding-right: 8%;
+
+
+}
+
+.logo{
+    color:white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span{
+    color: blue;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+    
+    
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+font-weight: bold;
+    text-transform: capitalize;}
+
+nav ul li a:hover{
+    color: blue;
+    transition: .4s;
+}
+
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%);
+
+}
+h1{
+    color: brown;
+    margin: 20px 0px 20px;
+    font-size: 40px;   
+}
+h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 40px;
+
+}
+
+
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 60%;
+    left: 60;
+
+    transform: translate(-50%,-50%) ;
+    
+}
+.circle:nth-child(1){
+    background: linear-gradient(transparent 50%,black);
+    width: 25rem;
+}
+.circle:nth-child(2){
+    width: 20rem;
+    background-image: url("image/image121.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: .2rem solid white;
+    box-shadow: 0 0 1rem white, 
+    inset 0 0 1rem white, 
+    0 0 2rem blue, 
+    inset 0 0 2rem blue,
+     0 0 4rem blue,
+     inset 0 0 4rem blue;
+
+}  
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: black;
+}
+ .about-text{
+    width: 550px;
+ }
+
+ .main{
+
+    .design .circle{
+        aspect-ratio: 1;
+        position: absolute;
+        border-radius: 70%;
+        top: 165%;
+        left: 20%;
+        transform: translate(-50%,-50%) ;
+        
+    }
+    .circle:nth-child(1){
+        background: linear-gradient(transparent 50%,wheat);   
+        width: 25rem;
+    }
+    .circle:nth-child(2){
+        width: 20rem;
+        background-image: url("image/image113.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border: .2rem solid white;
+        box-shadow: 0 0 1rem white, 
+        inset 0 0 1rem white, 
+        0 0 2rem sandybrown, 
+        inset 0 0 2rem sandybrown, 
+        0 0 4rem sandybrown,
+        inset 0 0 4rem sandybrown;
+        
+    }  
+
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+ }
+
+ .about-text h2{
+    color: blue;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+ }
+
+ .about-text h5{
+    color: blue;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+ }
+
+ .about-text p{
+    color: rgb(192, 214, 235);
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 18px;
+    margin-bottom: 40px;
+ }
+
+ .about-text h1{
+    color: blue;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+ }
+
+ .service{
+    background-color: black;
+    width: 100%;
+    padding: 100px 0px;
+ }
+
+ .title h2{
+    color: white;
+    font-size: 300% ;
+   width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+
+ }
+
+ .box{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 400px;
+}
+.fonts{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: white;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.fonts i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: blue;
+}
+h5{
+    color: black;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.fonts .button{
+    background-color: blue;
+    color: black;
+    text-decoration: none ;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 5px 30px;
+    border-radius: 50px;
+    transition: .3s;
+}
+.fonts .button:hover{
+background-color: transparent;
+border: 2px solid blue;
+cursor: pointer;
+}
+
+.Contact{
+    padding: 100px 0px;
+    width: 100%;
+    height: 200px;
+    background: black ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .icons .fa-brands{
+        color: blue;
+        font-size: 40px;
+    }
+
+    .icons{
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+}
+
+.Contact p{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.Contact .buttons{
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent ;
+    font-weight: bold;
+    padding: 15px 25px;
+    border-radius: 30px;
+    transition: .3s;
+}
+.Contact .CN{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 20px;
+    width: 50%;
+    max-width: 100%;
+    position: relative;
+}
+
+.CN C input:first-child{
+
+    display: inline;
+    width: 100%;
+    padding: 15px 20px 15px;
+    border: 3px solid blue;
+    border-radius: 30px;
+    
+}
+
+.CN C1 input:first-child{
+    display: inline;
+    width: 100%;
+    padding: 15px 20px 15px;
+    border: 3px solid blue;
+    border-radius: 30px;
+}
+
+.CN C2 input:first-child{
+    display: inline;
+    width: 100%;
+    padding: 15px 20px 15px;
+    border: 3px solid blue;
+    border-radius: 30px;
+}
+
